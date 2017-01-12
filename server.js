@@ -20,12 +20,12 @@ app.use((req, res, next) => {
 })
 
 
-app.use((req, res, next) => {
-    res.render('maintanance.hbs', {
-        headerTitle: 'headerTitle inj!',
-        year: new Date().getFullYear()
-    });
-})
+// app.use((req, res, next) => {
+//     res.render('maintanance.hbs', {
+//         headerTitle: 'headerTitle inj!',
+//         year: new Date().getFullYear()
+//     });
+// })
 
 app.use(express.static(__dirname + '/public'));
 
