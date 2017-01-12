@@ -39,6 +39,17 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    //res.send('<h1>hello Express!</h1>');
+    res.render('projects.hbs', {
+        headerTitle: 'headerTitle inj!',
+        year: new Date().getFullYear()
+
+
+    });
+});
+
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         headerTitle: 'headerTitle inj!',
